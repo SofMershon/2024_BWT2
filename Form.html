@@ -33,32 +33,29 @@
             </div>
         </div>
             <h3 align="center"> <font color="darkblue", face="Arial", size=5>Анкета</font></h3>
-<form align="center" face="Arial", size=5 action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
-    <ul>
-       
-        <li>Имя<input type="text" value="Софья"></li>
-        <li>Фамилия <input type="text" value="Мершон"></li>
-        <li>Отчество <input id="a" name="a"  type="text" value=Ростиславовна></li>
-        <li>Класс <input name="result" type = "number" value="11"></li>
-        <li>Номер телефона<input type = "number" value= 89082999999></li>
-        <li>Дата обращения<input type = "date" value="06.11.24"></li>
-        <label>Курс:</label>
-        <input type="radio">Русский язык</ul> 
-        <input type="radio">Профильная математика</ul>
-        <input type="radio">Обществознание</ul>
-        <input type="radio">История</ul>
-        <input type="radio">Английский язык</ul>
-        <input type="radio">Физика</ul>
-        <input type="radio">Химия</ul>
-        <input type="radio">Информатика</ul>
-        <li>Желаемый результат (в баллах)<input type = "number" value= 100></li>
-        <li>Почта<input id="a" name="a"  type="text" value=mershonsof@gmail.com></li>
-     
-        
-        <button type="submit">Отправить</button>
-
-    </ul>
-</form>
+<form align="center" action="https://yourserver.com/submit-form" method="POST" id="UserEnter" name="UserEnter" target="_blank">
+                <ul>
+                    <li>Имя: <input type="text" value="Софья" name="first_name"></li>
+                    <li>Фамилия: <input type="text" value="Мершон" name="last_name"></li>
+                    <li>Отчество: <input type="text" value="Ростиславовна" name="patronymic"></li>
+                    <li>Класс: <input type="number" value="11" name="class"></li>
+                    <li>Номер телефона: <input type="number" value="89082999999" name="phone_number"></li>
+                    <li>Дата обращения: <input type="date" value="06.11.24" name="date"></li>
+                    <li>Курс:
+                        <input type="radio" name="course" value="Русский язык"> Русский язык
+                        <input type="radio" name="course" value="Профильная математика"> Профильная математика
+                        <input type="radio" name="course" value="Обществознание"> Обществознание
+                        <input type="radio" name="course" value="История"> История
+                        <input type="radio" name="course" value="Английский язык"> Английский язык
+                        <input type="radio" name="course" value="Физика"> Физика
+                        <input type="radio" name="course" value="Химия"> Химия
+                        <input type="radio" name="course" value="Информатика"> Информатика
+                    </li>
+                    <li>Желаемый результат: <input type="number" value="100" name="desired_result"></li>
+                    <li>Почта: <input type="text" value="mershonsof@gmail.com" name="email"></li>
+                </ul>
+                <button type="submit">Отправить</button>
+            </form>
 
 
 
