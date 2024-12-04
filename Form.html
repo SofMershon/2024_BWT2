@@ -1,28 +1,23 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>form</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-     
 </head>
-
-<body background="https://i.pinimg.com/originals/92/98/41/92984159339df76cd563ee8f8b44c368.jpg"
-
-    <div class="container" id = "nav-placeholder">
-
-        <header class="text text-center" style="height: 3.rem; width : device-width">
+<body background="https://i.pinimg.com/originals/92/98/41/92984159339df76cd563ee8f8b44c368.jpg">
+    <div class="container" id="nav-placeholder">
+        <header class="text text-center" style="height: 3rem; width: device-width">
             <div class="dcard-body bg-color">
-                <h5 class="card-title" style = " font-family: cambria ;width: auto; font-weight: bolder; "></h5> ><br> SMSKOOL. Твоя лучшая подготовка к ЕГЭ. </h5>
-                <img height="30px" width="device-width" >
+                <h5 class="card-title" style="font-family: cambria; width: auto; font-weight: bolder;"> SMSKOOL. Твоя лучшая подготовка к ЕГЭ. </h5>
+                <img height="30px" width="device-width">
             </div>
         </header>
 
-        <div class="card" style = " width: auto" bgcolor="">
-            <div class="card-body" style = " font-family:Georgia, 'Times New Roman', Times, serif, Times, serif, Helvetica, sans-serif ;width: auto; font-weight: blod; ">
+        <div class="card" style="width: auto">
+            <div class="card-body" style="font-family:Georgia, 'Times New Roman', Times, serif, Times, serif, Helvetica, sans-serif; width: auto; font-weight: bold;">
                 <ul class="nav nav-tabs">
                     <li class="nav-item"> <a class="nav-link" href="./index.html">О Нас!!!</a> </li>
                     <li class="nav-item"> <a class="nav-link" href="./rolli-shop-start-project/rolli-shop-start-project/shop4.html">Наши курсы</a></li>
@@ -32,37 +27,42 @@
                 </ul>
             </div>
         </div>
-            <h3 align="center"> <font color="darkblue", face="Arial", size=5>Анкета</font></h3>
-<form align="center" action="https://yourserver.com/submit-form" method="POST" id="UserEnter" name="UserEnter" target="_blank">
-                <ul>
-                    <li>Имя: <input type="text" value="Софья" name="first_name"></li>
-                    <li>Фамилия: <input type="text" value="Мершон" name="last_name"></li>
-                    <li>Отчество: <input type="text" value="Ростиславовна" name="patronymic"></li>
-                    <li>Класс: <input type="number" value="11" name="class"></li>
-                    <li>Номер телефона: <input type="number" value="89082999999" name="phone_number"></li>
-                    <li>Дата обращения: <input type="date" value="06.11.24" name="date"></li>
-                    <li>Курс:
-                        <input type="radio" name="course" value="Русский язык"> Русский язык
-                        <input type="radio" name="course" value="Профильная математика"> Профильная математика
-                        <input type="radio" name="course" value="Обществознание"> Обществознание
-                        <input type="radio" name="course" value="История"> История
-                        <input type="radio" name="course" value="Английский язык"> Английский язык
-                        <input type="radio" name="course" value="Физика"> Физика
-                        <input type="radio" name="course" value="Химия"> Химия
-                        <input type="radio" name="course" value="Информатика"> Информатика
-                    </li>
-                    <li>Желаемый результат: <input type="number" value="100" name="desired_result"></li>
-                    <li>Почта: <input type="text" value="mershonsof@gmail.com" name="email"></li>
-                </ul>
-                <button type="submit">Отправить</button>
-            </form>
+        
+        <h3 align="center"><font color="darkblue", face="Arial", size=5>Анкета</font></h3>
 
+        <form align="center" face="Arial", size=5 action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+            <ul>
+                <li>Имя<input type="text" value="Софья"></li>
+                <li>Фамилия <input type="text" value="Мершон"></li>
+                <li>Отчество <input id="a" name="a" type="text" value="Ростиславовна"></li>
+                <li>Класс <input name="result" type="number" value="11"></li>
+                <li>Номер телефона<input type="number" value="89082999999"></li>
+                <li>Дата обращения<input type="date" value="06.11.24"></li>
+                <label>Курс:</label>
+                <input type="radio">Русский язык
+                <input type="radio">Профильная математика
+                <input type="radio">Обществознание
+                <input type="radio">История
+                <input type="radio">Английский язык
+                <input type="radio">Физика
+                <input type="radio">Химия
+                <input type="radio">Информатика
+                <li>Желаемый результат (в баллах)<input type="number" value="100"></li>
+                <li>Почта<input id="a" name="a" type="text" value="mershonsof@gmail.com"></li>
+                
+                <button id="send" type="submit">Отправить</button>
+            </ul>
+        </form>
 
+    </div>
 
-<p>
+    <script>
+        const elementSend = document.getElementById("send");
+        elementSend.addEventListener('click', function(event) {
+            event.preventDefault();  // Предотвращаем стандартную отправку формы
+            alert("Форма будет отправлена!");  // Пример
+            document.getElementById("UserEnter").submit();  // Отправить форму
+        });
+    </script>
 </body>
-<script>
-const elementSend = document.getElementById("send");
-elementSend.addEventListener('click', send)
-</script>
-</body>
+</html>
