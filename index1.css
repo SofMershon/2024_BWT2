@@ -1,0 +1,18 @@
+.content-block {
+    background-image: url('/images/abc.jpg'); /* Путь к изображению */
+    background-size: cover; /* Масштабирование изображения */
+    background-position: center; /* Центрирование изображения */
+    height: 400px; /* Высота блока */
+    display: flex; /* Использование Flexbox для центрирования содержимого */
+    align-items: center; /* Выравнивание по вертикали */
+    justify-content: center; /* Выравнивание по горизонтали */
+    color: white; /* Цвет текста */
+    text-align: center; /* Центрирование текста */
+    padding: 20px; /* Поля вокруг содержимого */
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для контента */
+    padding: 20px; /* Поля вокруг текста */
+    border-radius: 10px; /* Скругление углов */
+}

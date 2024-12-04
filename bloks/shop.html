@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-image: url("https://i.pinimg.com/originals/92/98/41/92984159339df76cd563ee8f8b44c368.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      header {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 0.5rem;
+      }
+      .card {
+        margin: 1rem 0;
+      }
+      .product-card {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      }
+      .product-card img {
+        height: 200px;
+        object-fit: cover;
+        border-bottom: 1px solid #ddd;
+      }
+      .product-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="text-center">
+        <h1>SMSKOOL</h1>
+        <p>Твоя лучшая подготовка к ЕГЭ</p>
+      </header>
+
+      <!-- Navigation -->
+      <nav class="nav nav-tabs">
+        <a class="nav-link" href="../index.html">О Нас</a>
+        <a class="nav-link active" href="../bloks/shop.html">Наши курсы</a>
+        <a class="nav-link" href="../Form.html">Анкета</a>
+        <a class="nav-link" href="../Teachers.html">Преподаватели</a>
+        <a class="nav-link" href="../socialmedia.html">Социальные сети</a>
+      </nav>
+
+      <!-- Product Grid -->
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="card product-card">
+            <img
+              src="https://via.placeholder.com/300"
+              alt="Product 1"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="product-title">Курс 1</h5>
+              <p class="card-text">
+                Описание курса 1. Лучший выбор для подготовки.
+              </p>
+              <button class="btn btn-primary">Подробнее</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card product-card">
+            <img
+              src="https://via.placeholder.com/300"
+              alt="Product 2"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="product-title">Курс 2</h5>
+              <p class="card-text">Описание курса 2. Успей записаться.</p>
+              <button class="btn btn-primary">Подробнее</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card product-card">
+            <img
+              src="https://via.placeholder.com/300"
+              alt="Product 3"
+              class="card-img-top"
+            />
+            <div class="card-body">
+              <h5 class="product-title">Курс 3</h5>
+              <p class="card-text">Описание курса 3. Успех гарантирован.</p>
+              <button class="btn btn-primary">Подробнее</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+4/dqoaBlxNyKpMy7tl2TwEUmLYHmf6AvCw4FDqC5D2zsFgr4mnLHE8ZB4y45I"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

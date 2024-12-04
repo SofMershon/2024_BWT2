@@ -1,0 +1,51 @@
+.items__control {
+  background-color: #007bff; /* Синий цвет для кнопок */
+  border: 1px solid #0056b3; /* Темно-синий бордер */
+  color: white; /* Белый текст */
+  padding: 10px 15px; /* Увеличим отступы, чтобы кнопки были крупнее */
+  cursor: pointer;
+  font-size: 18px; /* Увеличим размер шрифта */
+  font-weight: bold;
+  border-radius: 5px; /* Сделаем углы кнопок немного округлыми */
+  transition: background-color 0.3s, transform 0.2s ease; /* Добавим анимацию */
+  min-width: 35px;
+  text-align: center;
+}
+
+/* Стили для кнопок при наведении */
+.items__control:hover {
+  background-color: #0056b3; /* Темно-синий при наведении */
+  transform: scale(1.1); /* Немного увеличим кнопку при наведении */
+}
+
+/* Стили для кнопки "-" */
+.items__control[data-action="minus"] {
+  background-color: #dc3545; /* Красный цвет для кнопки "-" */
+}
+
+.items__control[data-action="minus"]:hover {
+  background-color: #c82333; /* Более темный красный при наведении */
+}
+
+/* Стили для кнопки "+" */
+.items__control[data-action="plus"] {
+  background-color: #28a745; /* Зеленый цвет для кнопки "+" */
+}
+
+.items__control[data-action="plus"]:hover {
+  background-color: #218838; /* Более темный зеленый при наведении */
+}
+
+/* Центрирование кнопок */
+.counter-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Увеличиваем промежуток между кнопками */
+}
+
+.cart-item__img img {
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: cover;
+}
